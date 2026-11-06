@@ -19,16 +19,12 @@ npm run preview  # 预览构建产物
 
 ## 部署
 
-仓库内置 `deploy.sh`，会构建项目并把 `dist/` 发布到 GitHub Pages 的 `gh-pages` 分支：
+推送到 `main` 分支后，GitHub Actions 会自动构建并发布到 GitHub Pages，工作流见
+`.github/workflows/deploy.yml`。也可以在 Actions 页面手动运行 `Deploy to GitHub Pages`。
 
-```bash
-./deploy.sh
-```
+首次使用前，请在 GitHub 仓库 Settings → Pages 中将 Source 设为 **GitHub Actions**。
 
-首次使用前，请在 GitHub 仓库 Settings → Pages 中将 Source 设为：
-`Deploy from a branch` → 分支 `gh-pages` → `/ (root)`。
-
-也可以将 `dist/` 目录手动上传到任意静态托管服务。
+线上地址：`https://kenaut.github.io/BNMB-web/`
 
 ## 相关链接
 
