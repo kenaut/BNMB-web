@@ -15,7 +15,7 @@ import { LINKS } from "../data/site.js";
               网页版适合在电脑上安静地过一遍活用表。
             </p>
           </div>
-          <span class="download-version">ANDROID v0.2.0 · WEB</span>
+          <span class="download-version">ANDROID v0.3.0 · WEB</span>
         </div>
 
         <div class="download-cards">
@@ -24,7 +24,7 @@ import { LINKS } from "../data/site.js";
               <span class="platform-icon"><SiteIcon name="phone" :size="21" /></span>
               <div>
                 <div class="download-card-name">Android 版</div>
-                <div class="download-card-meta">APK · 12.3 MB · Android 7.0+</div>
+                <div class="download-card-meta">APK · 12.3 MB · Android 7.0+ · v0.3.0</div>
               </div>
             </div>
             <p>

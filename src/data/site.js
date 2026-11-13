@@ -2,7 +2,8 @@
 
 export const LINKS = {
   web: "https://kenaut.github.io/BNMB/",
-  androidApk: "https://github.com/kenaut/BNMB-android/releases/download/2/BNMB_android-v0.2.apk",
+  androidApk:
+    "https://github.com/kenaut/BNMB-android/releases/download/3/BNMB_android-v0.3.apk",
   githubWeb: "https://github.com/kenaut/BNMB",
   githubAndroid: "https://github.com/kenaut/BNMB-android",
   githubSite: "https://github.com/kenaut/BNMB-web",
