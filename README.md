@@ -31,7 +31,8 @@ npm run preview  # 预览构建产物
 - 网页版应用：<https://kenaut.github.io/BNMB/>
 - Web 版源码：<https://github.com/kenaut/BNMB>
 - Android 版：<https://github.com/kenaut/BNMB-android>
-- Android 下载：<https://github.com/kenaut/BNMB-android/releases/download/3/BNMB_android-v0.3.apk>
+- Android 下载（v0.3.1）：<https://github.com/kenaut/BNMB-android/releases/download/v0.3.1/BNMB_android-v0.3.1.apk>
+- v0.3.0 迁移包：<https://github.com/kenaut/BNMB-android/releases/download/v0.3.1/BNMB_android-v0.3.0-migrate.apk>
 
 ## License
 

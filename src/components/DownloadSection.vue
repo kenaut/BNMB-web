@@ -15,7 +15,7 @@ import { LINKS } from "../data/site.js";
               网页版适合在电脑上安静地过一遍活用表。
             </p>
           </div>
-          <span class="download-version">ANDROID v0.3.0 · WEB</span>
+          <span class="download-version">ANDROID v0.3.1 · WEB</span>
         </div>
 
         <div class="download-cards">
@@ -24,7 +24,7 @@ import { LINKS } from "../data/site.js";
               <span class="platform-icon"><SiteIcon name="phone" :size="21" /></span>
               <div>
                 <div class="download-card-name">Android 版</div>
-                <div class="download-card-meta">APK · 12.3 MB · Android 7.0+ · v0.3.0</div>
+                <div class="download-card-meta">APK · 12.0 MB · Android 7.0+ · v0.3.1</div>
               </div>
             </div>
             <p>
@@ -33,11 +33,19 @@ import { LINKS } from "../data/site.js";
             </p>
             <a class="btn btn--primary" :href="LINKS.androidApk" target="_blank" rel="noopener noreferrer">
               <SiteIcon name="download" :size="17" />
-              下载 APK
+              下载 v0.3.1
+            </a>
+            <a
+              class="download-alt-link"
+              :href="LINKS.androidApkMigrate"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              从 v0.3.0 升级？先下载迁移包（12.4 MB）
             </a>
             <div class="download-tags">
               <span class="download-tag">无需联网</span>
-              <span class="download-tag">覆盖升级保留进度</span>
+              <span class="download-tag">正式签名</span>
               <span class="download-tag">597 词</span>
             </div>
           </article>
@@ -65,6 +73,52 @@ import { LINKS } from "../data/site.js";
           </article>
         </div>
 
+        <div class="migrate-panel">
+          <div class="migrate-head">
+            <div>
+              <b>只有从 v0.3.0 升级才需要迁移</b>
+              <p>
+                v0.3.1 起改用正式签名，系统不允许直接覆盖 v0.3.0 的 debug 签名安装包。
+                按下面 5 步操作，学习进度可以完整带过来。
+              </p>
+            </div>
+            <a
+              class="btn btn--ghost-light"
+              :href="LINKS.androidApkMigrate"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SiteIcon name="download" :size="16" />
+              下载迁移包
+            </a>
+          </div>
+          <ol class="migrate-steps">
+            <li>
+              <strong>安装迁移包</strong>
+              先装 v0.3.0 迁移包，可直接覆盖旧版，数据不受影响。
+            </li>
+            <li>
+              <strong>导出备份</strong>
+              打开「主页 → 数据管理 → 导出数据」，保存 JSON 文件。
+            </li>
+            <li>
+              <strong>卸载旧版</strong>
+              卸载 BNMB，系统会清除应用内的旧数据。
+            </li>
+            <li>
+              <strong>安装 v0.3.1</strong>
+              安装上方下载的正式签名安装包。
+            </li>
+            <li>
+              <strong>导入备份</strong>
+              打开「主页 → 数据管理 → 导入数据」，选择刚才的 JSON。
+            </li>
+          </ol>
+          <p class="migrate-note">
+            迁移只需做这一次。v0.3.1 之后签名固定，后续版本可以直接覆盖升级。
+          </p>
+        </div>
+
         <div class="install-steps">
           <div class="install-step">
             <b>1</b>
@@ -76,12 +130,13 @@ import { LINKS } from "../data/site.js";
           </div>
           <div class="install-step">
             <b>3</b>
-            <span><strong>直接覆盖安装</strong><br />相同包名与签名，学习进度自动保留。</span>
+            <span><strong>后续可直接覆盖</strong><br />v0.3.1 起签名固定，升级保留进度。</span>
           </div>
         </div>
 
         <p class="download-footnote">
-          当前安卓包为 debug 签名，适合个人安装与分发测试；如需上架应用商店，请替换为正式签名并配置 release 构建。
+          v0.3.1 已从 debug 签名切换为正式签名，包名仍为 com.kenaut.bnmb，并新增原生备份导出；
+          页面上的两个 APK 均来自同一次 release，请按上方说明选择。
         </p>
       </div>
     </div>

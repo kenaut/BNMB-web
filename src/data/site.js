@@ -3,7 +3,9 @@
 export const LINKS = {
   web: "https://kenaut.github.io/BNMB/",
   androidApk:
-    "https://github.com/kenaut/BNMB-android/releases/download/3/BNMB_android-v0.3.apk",
+    "https://github.com/kenaut/BNMB-android/releases/download/v0.3.1/BNMB_android-v0.3.1.apk",
+  androidApkMigrate:
+    "https://github.com/kenaut/BNMB-android/releases/download/v0.3.1/BNMB_android-v0.3.0-migrate.apk",
   githubWeb: "https://github.com/kenaut/BNMB",
   githubAndroid: "https://github.com/kenaut/BNMB-android",
   githubSite: "https://github.com/kenaut/BNMB-web",
@@ -203,7 +205,7 @@ export const FAQS = [
   },
   {
     q: "学习数据存在哪里？换设备怎么办？",
-    a: "进度保存在浏览器的 localStorage 中（键名 bnmb-progress），包含回合成绩、分形态统计与连续学习天数。网页版可以导出 JSON 备份并导入到另一台设备；Android 版支持通过系统文件选择器导入，但导出受 WebView 限制，建议先在网页版完成备份。存档损坏或版本不兼容时会自动降级为默认数据，不会白屏。",
+    a: "进度保存在浏览器的 localStorage 中（键名 bnmb-progress），包含回合成绩、分形态统计与连续学习天数。网页版与 Android 版都可以在「数据管理」中导出 JSON 备份、再导入到另一台设备。存档损坏或版本不兼容时会自动降级为默认数据，不会白屏。",
   },
   {
     q: "为什么要分批解锁活用形？",
@@ -211,7 +213,7 @@ export const FAQS = [
   },
   {
     q: "Android 版覆盖安装会丢失进度吗？",
-    a: "不会。所有版本使用相同的 applicationId（com.kenaut.bnmb）与签名证书，新版 APK 会递增 versionCode，可以直接覆盖安装，本地学习进度保留。",
+    a: "v0.3.1 起不会：包名固定为 com.kenaut.bnmb 并使用同一份正式签名，后续版本只需递增 versionCode，就能直接覆盖安装并保留本地进度。唯一的例外是从 v0.3.0（debug 签名）升级，需要先安装迁移包导出备份，再卸载重装，详见下载页的迁移步骤。",
   },
   {
     q: "词库可以自己扩充吗？",
