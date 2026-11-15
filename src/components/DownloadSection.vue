@@ -15,7 +15,7 @@ import { LINKS } from "../data/site.js";
               网页版适合在电脑上安静地过一遍活用表。
             </p>
           </div>
-          <span class="download-version">ANDROID v0.3.1 · WEB</span>
+          <span class="download-version">ANDROID v0.3.2 · WEB</span>
         </div>
 
         <div class="download-cards">
@@ -24,16 +24,17 @@ import { LINKS } from "../data/site.js";
               <span class="platform-icon"><SiteIcon name="phone" :size="21" /></span>
               <div>
                 <div class="download-card-name">Android 版</div>
-                <div class="download-card-meta">APK · 12.0 MB · Android 7.0+ · v0.3.1</div>
+                <div class="download-card-meta">APK · 12.7 MB · Android 7.0+ · v0.3.2</div>
               </div>
             </div>
             <p>
-              资源全部内置，<strong>完全离线运行</strong>，不申请联网权限。
+              学习资源全部内置，<strong>练习与词库完全离线</strong>。
+              联网只用于「设置 → 版本更新」检查与下载新版本。
               适合通勤、地铁里每天练几局，进度保存在本机。
             </p>
             <a class="btn btn--primary" :href="LINKS.androidApk" target="_blank" rel="noopener noreferrer">
               <SiteIcon name="download" :size="17" />
-              下载 v0.3.1
+              下载 v0.3.2
             </a>
             <a
               class="download-alt-link"
@@ -44,7 +45,8 @@ import { LINKS } from "../data/site.js";
               从 v0.3.0 升级？先下载迁移包（12.4 MB）
             </a>
             <div class="download-tags">
-              <span class="download-tag">无需联网</span>
+              <span class="download-tag">离线练习</span>
+              <span class="download-tag">应用内更新</span>
               <span class="download-tag">正式签名</span>
               <span class="download-tag">597 词</span>
             </div>
@@ -106,8 +108,8 @@ import { LINKS } from "../data/site.js";
               卸载 BNMB，系统会清除应用内的旧数据。
             </li>
             <li>
-              <strong>安装 v0.3.1</strong>
-              安装上方下载的正式签名安装包。
+              <strong>安装 v0.3.2</strong>
+              安装上方下载的最新正式签名安装包。
             </li>
             <li>
               <strong>导入备份</strong>
@@ -130,13 +132,13 @@ import { LINKS } from "../data/site.js";
           </div>
           <div class="install-step">
             <b>3</b>
-            <span><strong>后续可直接覆盖</strong><br />v0.3.1 起签名固定，升级保留进度。</span>
+            <span><strong>后续可直接覆盖</strong><br />0.3.1 起签名固定，升级保留进度。</span>
           </div>
         </div>
 
         <p class="download-footnote">
-          v0.3.1 已从 debug 签名切换为正式签名，包名仍为 com.kenaut.bnmb，并新增原生备份导出；
-          页面上的两个 APK 均来自同一次 release，请按上方说明选择。
+          v0.3.2 新增「设置 → 版本更新」：同时查询 GitHub 与 Gitee 镜像，下载后校验包名、签名与
+          versionCode 再安装，避免误装迁移包或降级。包名仍为 com.kenaut.bnmb，已安装 0.3.1 的用户可直接覆盖升级。
         </p>
       </div>
     </div>

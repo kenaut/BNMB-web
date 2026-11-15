@@ -3,7 +3,7 @@
 export const LINKS = {
   web: "https://kenaut.github.io/BNMB/",
   androidApk:
-    "https://github.com/kenaut/BNMB-android/releases/download/v0.3.1/BNMB_android-v0.3.1.apk",
+    "https://github.com/kenaut/BNMB-android/releases/download/v0.3.2/BNMB_android-v0.3.2.apk",
   androidApkMigrate:
     "https://github.com/kenaut/BNMB-android/releases/download/v0.3.1/BNMB_android-v0.3.0-migrate.apk",
   githubWeb: "https://github.com/kenaut/BNMB",
@@ -201,7 +201,7 @@ export const UNLOCK_BATCHES = [
 export const FAQS = [
   {
     q: "需要注册账号或联网吗？",
-    a: "不需要。网页版打开即可练习，Android 版把全部资源打包进安装包，完全离线运行，甚至没有申请联网权限。所有学习进度只保存在设备本地，不会上传到任何服务器。",
+    a: "不需要注册。网页版打开即可练习，Android 版把全部学习资源打包进安装包，练习与词库全程离线。v0.3.2 起申请了联网权限，但只用于「设置 → 版本更新」检查与下载新版本，不联网也完全不影响使用。所有学习进度只保存在设备本地，不会上传到任何服务器。",
   },
   {
     q: "学习数据存在哪里？换设备怎么办？",
@@ -213,7 +213,7 @@ export const FAQS = [
   },
   {
     q: "Android 版覆盖安装会丢失进度吗？",
-    a: "v0.3.1 起不会：包名固定为 com.kenaut.bnmb 并使用同一份正式签名，后续版本只需递增 versionCode，就能直接覆盖安装并保留本地进度。唯一的例外是从 v0.3.0（debug 签名）升级，需要先安装迁移包导出备份，再卸载重装，详见下载页的迁移步骤。",
+    a: "v0.3.1 起不会：包名固定为 com.kenaut.bnmb 并使用同一份正式签名，后续版本只需递增 versionCode，就能直接覆盖安装并保留本地进度（0.3.1 → 0.3.2 已验证）。唯一的例外是从 v0.3.0（debug 签名）升级，需要先安装迁移包导出备份，再卸载重装，详见下载页的迁移步骤。",
   },
   {
     q: "词库可以自己扩充吗？",

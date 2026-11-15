@@ -54,7 +54,7 @@ const isHandheld = ref(detectDevice() === "mobile");
 
         <p class="hero-trust">
           <span>597 个动词</span>
-          <span>Android 完全离线</span>
+          <span>Android 离线练习</span>
           <span>MIT 开源</span>
           <span>无需账号</span>
         </p>
