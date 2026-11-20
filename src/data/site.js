@@ -3,7 +3,7 @@
 export const LINKS = {
   web: "https://kenaut.github.io/BNMB/",
   androidApk:
-    "https://github.com/kenaut/BNMB-android/releases/download/v0.3.2/BNMB_android-v0.3.2.apk",
+    "https://github.com/kenaut/BNMB-android/releases/download/v0.4.0/BNMB_android-v0.4.0.apk",
   androidApkMigrate:
     "https://github.com/kenaut/BNMB-android/releases/download/v0.3.1/BNMB_android-v0.3.0-migrate.apk",
   githubWeb: "https://github.com/kenaut/BNMB",
@@ -213,7 +213,7 @@ export const FAQS = [
   },
   {
     q: "Android 版覆盖安装会丢失进度吗？",
-    a: "v0.3.1 起不会：包名固定为 com.kenaut.bnmb 并使用同一份正式签名，后续版本只需递增 versionCode，就能直接覆盖安装并保留本地进度（0.3.1 → 0.3.2 已验证）。唯一的例外是从 v0.3.0（debug 签名）升级，需要先安装迁移包导出备份，再卸载重装，详见下载页的迁移步骤。",
+    a: "v0.3.1 起不会：包名固定为 com.kenaut.bnmb 并使用同一份正式签名，后续版本只需递增 versionCode，就能直接覆盖安装并保留本地进度与做题偏好（0.3.1 / 0.3.2 → 0.4.0 均可直接覆盖）。唯一的例外是从 v0.3.0（debug 签名）升级，需要先安装迁移包导出备份，再卸载重装，详见下载页的迁移步骤。",
   },
   {
     q: "词库可以自己扩充吗？",

@@ -15,7 +15,7 @@ import { LINKS } from "../data/site.js";
               网页版适合在电脑上安静地过一遍活用表。
             </p>
           </div>
-          <span class="download-version">ANDROID v0.3.2 · WEB</span>
+          <span class="download-version">ANDROID v0.4.0 · WEB</span>
         </div>
 
         <div class="download-cards">
@@ -24,7 +24,7 @@ import { LINKS } from "../data/site.js";
               <span class="platform-icon"><SiteIcon name="phone" :size="21" /></span>
               <div>
                 <div class="download-card-name">Android 版</div>
-                <div class="download-card-meta">APK · 12.7 MB · Android 7.0+ · v0.3.2</div>
+                <div class="download-card-meta">APK · 12.7 MB · Android 7.0+ · v0.4.0</div>
               </div>
             </div>
             <p>
@@ -34,7 +34,7 @@ import { LINKS } from "../data/site.js";
             </p>
             <a class="btn btn--primary" :href="LINKS.androidApk" target="_blank" rel="noopener noreferrer">
               <SiteIcon name="download" :size="17" />
-              下载 v0.3.2
+              下载 v0.4.0
             </a>
             <a
               class="download-alt-link"
@@ -108,7 +108,7 @@ import { LINKS } from "../data/site.js";
               卸载 BNMB，系统会清除应用内的旧数据。
             </li>
             <li>
-              <strong>安装 v0.3.2</strong>
+              <strong>安装 v0.4.0</strong>
               安装上方下载的最新正式签名安装包。
             </li>
             <li>
@@ -137,8 +137,9 @@ import { LINKS } from "../data/site.js";
         </div>
 
         <p class="download-footnote">
-          v0.3.2 新增「设置 → 版本更新」：同时查询 GitHub 与 Gitee 镜像，下载后校验包名、签名与
-          versionCode 再安装，避免误装迁移包或降级。包名仍为 com.kenaut.bnmb，已安装 0.3.1 的用户可直接覆盖升级。
+          v0.4.0 把学习页活用速查表改为竖屏折叠列表，动词一览支持关键词与类型／级别／形态筛选，
+          设置页新增做题偏好（振假名、形态徽章、动词属性提示）。包名仍为 com.kenaut.bnmb，
+          已安装 0.3.1 / 0.3.2 的用户可直接覆盖升级并继承进度；「设置 → 版本更新」可检查后续版本。
         </p>
       </div>
     </div>
